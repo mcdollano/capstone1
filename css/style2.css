@@ -1,0 +1,711 @@
+body {
+	margin: 0 auto;
+	font-family: 'Assistant', sans-serif;
+}
+
+.affix {
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+header {
+	background: url(../img/banner-1.png);
+	background-size: cover;
+	background-position: center top;
+	text-align: center;
+	background-attachment: fixed;
+}
+
+
+@keyframes bounce { /*for bouncing images*/
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+		/*------SCROLL BUTTON------*/
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 10001;
+	border: none;
+	outline: none;
+	background-color: orange;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+}
+
+		/*-----HOME-PAGE-----*/
+
+		/*-----NAV-BAR-----*/
+.navbar-header {
+	position: relative;
+	z-index: 1000;
+}
+
+.navbar-brand {
+	color: skyblue;
+	font-size: 30px;
+	padding: 5px 0 0 20px;
+}
+
+.navbar-brand img {
+	width: 100px;
+}
+
+.navbar-brand img:hover {
+	animation: bounce 1s;
+}
+
+.navbar-one {
+  border-radius: 0;
+  background: white;
+  margin-left: 0;
+
+}
+
+.navbar-one ul li a {
+	font-size: 18px;
+	color: black;
+	text-align: center;
+}
+
+.navbar-one ul li a:hover {
+	font-size: 1.5em;
+	color: black;
+	background-color: #ff854b;
+	transition: 0.5s;
+
+}
+
+.navbar ul li a {
+	text-transform: uppercase;
+}
+
+
+button .icon-bar {
+	background-color: black;
+}
+
+	/*-----END OF NAV-BAR-----*/
+	/*-----BANNER-IMAGE -----*/
+
+
+.container {
+
+	width: 100%;
+	padding: 0;
+	margin-right: 0%;
+	margin-left: 0%;
+}
+
+.banner-caption {
+	padding: 20%;
+	/*line-height: 100px;*/
+	width: 65%;
+
+}
+
+.banner-caption h1 {
+	font-size: 45px;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 0;
+
+
+}
+
+.banner-caption h2 {
+	margin-top: 0;
+	color: white;
+	/*background-color: black;*/
+
+}
+
+.btn-warning {
+	font-weight: bold;
+}
+
+/*---------- WHY EASEE LIFE ---------*/
+
+.first-row {
+	text-align: center;
+	padding-bottom: 50px;
+	margin: 0;
+	z-index: -1;
+	position: relative;
+}
+
+.first-row img {
+	width: 50px;
+	height: 50px;
+	padding-left: 5px;
+}
+
+.row h1 {
+	font-weight: bold;
+	font-size: 2em;
+	padding: 10px 10px 25px 10px;
+	color: #ff854b;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+.row {
+	margin: 0;
+}
+
+.row span {
+	font-weight: bold;
+	color: #113b0d;
+}
+
+.row p {
+	padding-top: 10px;
+}
+
+			/*--- END --*/
+
+	/*-------  HOW IT WORKS ------*/
+
+.second-row {
+	z-index: -1;
+	position: relative;
+}
+
+.second-row img {
+	width: 100%;
+}
+
+.second-row h1 {
+	margin-top: 0;
+}
+
+.second-row p {
+	width: 90%;
+}
+
+.col-md-7 h4 {
+	color: #ff854b;
+	font-weight: bold;
+}
+
+.second-row > .col-md-7 > p {
+	padding-bottom: 30px;
+}
+
+
+img[alt="about-image"]:hover {
+	animation: bounce 1s;
+}
+
+			/*--- END --*/
+	/*-------  AFFILIATE PARTNERS ------*/
+
+
+.heading1 {
+	color: #ff854b;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+
+.third-row > .col-md-10 {
+	/*display: table;*/
+	text-align: center;
+}
+
+.third-row img {
+	width: 200px;
+	height: 170px;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 5px;
+	box-shadow: 5px 5px 20px #888888;
+	box-sizing: border-box;
+	display: inline;
+}
+
+.third-row {
+	padding-bottom: 50px;
+	z-index: -1;
+	position: relative;
+}
+
+			/*--- END --*/
+
+
+	/*-------  CUSTOMER REVIEW ------*/
+/*.fourth-row h1 {
+	font-weight: bold;
+	font-size: 2em;
+	padding: 10px 10px 25px 10px;
+	color: #ff854b;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+
+}*/
+
+/*.carousel-inner {
+	padding-left: 28%;
+}*/
+	/*-------END OF CUSTOMER REVIEW ------*/
+
+
+	/*-------  FAQs ------*/
+
+.panel-container {
+	width: 60%;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.panel-container h1 {
+	font-weight: bold;
+	color: #ff854b;
+	padding-bottom: 15px;
+}
+
+.panel-title {
+	padding: 20px;
+	font-size: 20px;
+}
+
+.panel {
+	margin-bottom: 20px;
+}
+
+.panel > .panel-heading {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+
+}
+
+.panel > .panel-heading:hover {
+	background-color: #ff854b;
+	color: white;
+	transition: 0.5s;
+}
+
+/*-------END OF FAQs ------*/
+
+
+/*---------FOOTER----------*/
+
+.last-row {
+	padding-bottom: 50px;
+}
+
+
+.last-row img {
+	width: 200px;
+	height: 80px;
+}
+
+.sub-footer {
+	padding-right: 50px;
+}
+
+.sub-footer p {
+	font-size: 18px;
+	padding-left: 45px;
+}
+
+.sub-footer > h1 {
+	margin-top: 0; 
+	color: #ff854b;
+	text-align: left;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 10px;
+}
+
+.sub-footer > a > h2 {
+	margin-top: 0; 
+	text-align: left;
+	font-size: 20px;
+	color: black;
+}
+
+.recent-container {
+	padding-left: 0;
+}
+
+.recent-posts {
+	max-width: 200px;
+	box-sizing: border-box;
+	padding-left: 0;
+}
+
+.recent-posts img {
+	width: 50px;
+	height: 50px;
+	padding-bottom: 5px;
+	-webkit-filter: grayscale(100%);
+
+}
+
+.recent-posts img:hover {
+	-webkit-filter: grayscale(0%);
+}
+
+.contact-container {
+	background-color: #f7f7f7;
+	padding-top: 40px;
+}
+
+.overlay {
+}
+
+footer {
+	background-color: #ff854b;
+	font-size: 1em;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 30px;
+	color: white;
+}
+
+footer img {
+	width: 30px;
+	padding: 5px;
+	float: right;
+}
+
+.overlay {
+}
+
+footer img:hover {
+	animation: bounce 1s;
+}
+
+/*---ABOUT US---*/
+
+
+
+.about h3 {
+	font-weight: bold;
+}
+
+.container-about {
+	padding: 110px 0 50px 20px;
+	height: 200px;	
+	background-color: #f7f7f7;
+	font-size: 2em;
+	box-sizing: border-box;
+	font-weight: bold;
+	z-index: -1;
+	position: relative;
+
+}
+
+/*------WHO WE ARE-----*/
+
+.container-about1 {
+	text-align: center;
+	padding: 0 10% 20px 10%;
+	z-index: -1;
+	position: relative;
+}
+
+.about h1 {
+	font-weight: bold;
+	font-size: 2em;
+	padding: 10px 10px 25px 10px;
+	color: #ff854b;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.container-about1 p {
+	/*max-width: 500px;*/
+	text-align: center;
+}
+
+/*------END OF WHO WE ARE-----*/
+
+
+	/*--pick-up--*/
+
+
+
+.container-mission {
+	z-index: -1;
+	position: relative;
+}
+
+
+/*--carousel--*/
+
+.bs-example {
+	width:100%;
+	margin-bottom: 50px;
+	z-index: -1;
+	position: relative;
+}
+
+.carousel {
+/*	margin-left: 40%;*/
+}
+
+.carousel-inner {
+	width: 100%;
+	/*margin-left: 10%;*/
+	height: 80%;
+}
+
+.slide1 {
+	background-image: url("../office/office-4.jpg"); 
+	width: 100%;
+	height: 70vh;
+	/*background-size: cover;*/
+}
+
+.slide2 {
+	background-image: url("../office/office-2.jpeg");
+	width: 100%;
+	height: 70vh;
+	/*background-size: cover;*/
+}
+
+.slide3 {
+	background-image: url("../office/office-3.jpeg"); 
+	max-width: 100%;
+	height: 70vh;
+	/*background-size: cover;*/
+}
+
+.office-container p {
+	text-align: center;
+	line-height: 15px;
+}
+
+.office-heading {
+	margin-top: 50px;
+	font-size: 2em;
+	color: #ff854b;
+	font-weight: bold;
+}
+
+
+.clear:after {
+	content:"";
+	display: block;
+	clear:both;
+
+}
+
+		/*--end of carousel--*/
+
+		/*-- customer review--*/
+
+.review-section {
+	z-index: -1;
+	position: relative;
+	/*padding-left: 15%;*/
+	padding-left: 10%;
+}
+
+.review-main {
+	margin: 30px 10px;
+	position: relative;
+	float: left;
+	bottom: 20px;
+
+}
+
+.name-container {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	font-weight: bold;
+	background-color: #f7f7f7;
+	padding-left: 5px;
+
+}
+
+.name-container span {
+	color: black;
+}
+
+.comment-container {
+	font-size: 0.8em;
+	line-height: 1.2em;
+	padding-left: 5px;
+
+}
+
+.review-main img {
+	width: 80px;
+	height: 70px;
+	float: left;
+	margin-right: 10px;
+}
+
+.comment-main {
+	float: left;
+	width: 75%;
+}
+
+.container-review {
+	width: 450px;
+	padding-left: 5px;
+}
+
+.container-review1 {
+	width: 450px;
+	padding-left: 0;
+}
+
+/*-- SERVICES--*/
+
+.container-services {
+	padding: 50px 0 50px 20px;
+	height: 150px;	
+	background-color: #f7f7f7;
+	font-size: 2em;
+	box-sizing: border-box;
+	font-weight: bold;
+	z-index: -1;
+	position: relative;
+
+}
+
+.general-services {
+	z-index: -1;
+}
+
+.image-container img {
+	width: 120px;
+	height: 100px;
+}
+
+.image-container {
+	padding-left: 30%;
+}
+
+.border-container {
+	border: 2px solid #f7f7f7;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.general-services h4 {
+	margin-top: 10px;
+	margin-bottom: 0;
+	text-align: center;
+	color: #ff854b;
+	font-weight: bold;
+}
+
+.special-services h4 {
+	margin-top: 10px;
+	margin-bottom: 0;
+	text-align: center;
+	color: #ff854b;
+	font-weight: bold;
+}
+
+.services {
+	margin-bottom: 50px;
+}
+
+.service-button {
+	margin: 15px auto;
+	display: block;
+}
+
+/*--DOWNLOAD--*/
+
+.download-main {
+	background: url(../download/background-image2.png);
+	max-width: 100vw;
+	height: 100vh;
+	background-position: center top;
+	left: 0;
+	background-repeat: no-repeat;
+}
+
+.caption2 > h2 {
+	color: black;
+}
+
+img[alt="download"] {
+	width: 145px;
+	height: 50px;
+}
+
+
+/*--DOWNLOAD TWO--*/
+
+
+@media screen and (max-width: 900px) and (min-width: 800px) {
+    .download2  {
+	background-image: none;
+	margin-left: 25%;
+	    }
+}
+
+@media screen and (max-width: 800px) {
+    .download2  {
+	background-image: none;
+	margin-left: 15%;
+	    }
+}
+
+@media screen and (max-width: 560px) {
+    .download2  {
+	background-image: none;
+	margin-left: 10%;
+	    }
+}
+
+@media screen and (max-width: 500px) {
+    .download2  {
+	background-image: none;
+	margin-left: 5%;
+	    }
+}
+
+@media screen and (max-width: 450px) {
+    .download2  {
+	background-image: none;
+	margin-left: 2%;
+	    }
+}
+
+@media screen and (max-width: 410px) {
+    .download2  {
+	background-image: none;
+	margin-left: 1px;
+	    }
+}
+
+@media screen and (max-width: 399px) and (min-width: 320px) {
+    .download2  {
+	background-image: none;
+	margin-left: 0;
+	text-align: center;
+	
+}
+
