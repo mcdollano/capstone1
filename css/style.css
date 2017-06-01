@@ -709,6 +709,7 @@ img[alt="download"] {
 	}
 	.caption2  {
 	width: 100%;
+
 	}
 }
 
@@ -718,7 +719,7 @@ img[alt="download"] {
 	margin-left: 15%;
 	}
 	.caption2  {
-	/*font-size: 150px;*/
+	font-size: 100px;
 	}
 }
 /*footer*/
@@ -734,4 +735,3 @@ img[alt="download"] {
 	display: none;
 	}
 }
-
