@@ -166,6 +166,33 @@ button .icon-bar {
 	    }
 	}
 
+ /*BANNER-COLLAPSE*/
+
+@media (max-width: 425px) { 
+    .index {
+    background: url(../banner/delivery-1.jpg);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+	}
+
+}
+
+@media (max-width: 320px) { 
+    .index-caption > h1 {
+		font-size: 20px;
+		text-align: center;
+	}
+	.index-caption > h2 {
+		font-size: 10px;
+		text-align: center;
+	}
+	.index-caption {
+		
+		 
+	}
+}
+
 /*---------- WHY EASEE LIFE ---------*/
 
 .first-row {
@@ -483,6 +510,10 @@ footer img:hover {
 
 /*--carousel--*/
 
+.about {
+	padding: 0;
+}
+
 .bs-example {
 	width:100%;
 	margin-bottom: 50px;
@@ -502,23 +533,28 @@ footer img:hover {
 
 .slide1 {
 	background-image: url("../office/office-4.jpg"); 
-	width: 100%;
+	width: 100vw;
 	height: 70vh;
-	/*background-size: cover;*/
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .slide2 {
 	background-image: url("../office/office-2.jpeg");
-	width: 100%;
+	width: 100vw;
 	height: 70vh;
-	/*background-size: cover;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+
 }
 
 .slide3 {
 	background-image: url("../office/office-3.jpeg"); 
-	max-width: 100%;
+	max-width: 100vw;
 	height: 70vh;
-	/*background-size: cover;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+
 }
 
 .office-container p {
@@ -554,9 +590,9 @@ footer img:hover {
 .review-main {
 	margin: 30px 0 30px 0;
 	position: relative;
-	float: left;
+	/*float: left;*/
 	bottom: 20px;
-
+	max-width: 900px;
 }
 
 .name-container {
@@ -592,12 +628,13 @@ footer img:hover {
 }
 
 .container-review {
-	width: 350px;
-	padding-left: 5px;
+	width: 100%;
+	padding-left: 3px;
+	margin-bottom: 20px;
 }
 
 .container-review1 {
-	width: 350px;
+	width: 100%;
 	padding-left: 0;
 }
 
@@ -685,53 +722,91 @@ footer img:hover {
 	left: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 100vh;
+	min-height: 90vh;
 }
 
 .caption2 > h2 {
 	color: black;
 }
 
-img[alt="download"] {
-	width: 145px;
-	height: 50px;
+.caption2 img {
+	width: 14vw;
+	/*height: 50px;*/
 }
 
 .caption2 {
-	max-width: 800px;
+	max-width: 900px;
+	position: relative;
+	
+	
 }
 
 
-@media screen and (max-width: 900px) { 
+@media (max-width: 1264px) { 
     .download-main  {
 	background-image: none;
-	margin-left: 15%;
+	margin-left: 10%;
 	}
 	.caption2  {
 	width: 100%;
 
 	}
+	.caption2 > h1 {
+		font-size: 10vw;
+		text-align: center;
+	}
+	.caption2 > h2 {
+		font-size: 3vw;
+		text-align: center;
+
+	}
+
+	.banner-caption > div {
+		transform: translate(-50%, 0);
+		top: 75%;
+		left: 50%;
+		position: absolute;
+
 }
 
-@media screen and (max-width: 899px) and (min-width: 338px){ 
-    .download-main  {
-	background-image: none;
-	margin-left: 15%;
+@media (max-width: 900px) { 
+    .contact-container  {
+	display: none;
 	}
-	.caption2  {
-	font-size: 100px;
+	.download-main {
+		margin-left: 4%;
 	}
 }
-/*footer*/
 
-@media screen and (max-width: 760px) { 
-	.contact-container {
+@media (max-width: 520px) { 
+    footer img {
 	display: none;
 	}
 }
 
-@media screen and (max-width: 512px) { 
-	footer img {
-	display: none;
+@media (max-width: 425px) { 
+    .download-main {
+    background: url(../images/smartphone1.png);
+    background-position: bottom;
+    background-size: 70%;
+    background-repeat: no-repeat;
+	}
+}
+
+@media (max-width: 375px) { 
+    .download-main {
+    background: url(../images/smartphone1.png);
+    background-position: bottom;
+    background-size: 70%;
+    background-repeat: no-repeat;
+	}
+}
+
+@media (max-width: 320px) { 
+    .download-main {
+    background: url(../images/smartphone1.png);
+    background-position: bottom;
+    background-size: 65%;
+    background-repeat: no-repeat;
 	}
 }
