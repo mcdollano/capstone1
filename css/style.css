@@ -1,5 +1,5 @@
 html,body {
-	overflow-x::  hidden;
+	overflow-x: hidden;
 }
 
 body {
@@ -228,6 +228,8 @@ button .icon-bar {
 
 .second-row p {
 	width: 90%;
+	text-align: justify;
+
 }
 
 .col-md-7 h4 {
@@ -238,6 +240,15 @@ button .icon-bar {
 .second-row > .col-md-7 > p {
 	padding-bottom: 30px;
 }
+
+@media (min-width: 766px) and (max-width: 1200px) {
+    .second-row img {
+	width: 100%;
+	height: 100%;
+	margin-top: 30%;
+	}
+}
+
 
 			/*--- END --*/
 	/*-------  AFFILIATE PARTNERS ------*/
