@@ -1,6 +1,5 @@
 html,body {
 	overflow-x::  hidden;
-	/*overflow: hidden;*/
 }
 
 body {
@@ -12,7 +11,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-}
+}/*--navbar--*/
 
 header {
 	background: url(../img/banner-1.png);
@@ -20,11 +19,11 @@ header {
 	background-position: center top;
 	text-align: center;
 	background-attachment: fixed;
-}
+}/*--index--*/
 
 
 @keyframes bounce { /*for bouncing images*/
-	0%, 20%, 60%, 100% {
+	0%, 20%, 60%, 100% { /* <--- percent of animation time*/
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
@@ -39,36 +38,20 @@ header {
 		transform: translateY(-10px);
 	}
 }
+/*----------------------HOME-PAGE--------------------*/
+	
+				/*-----NAV-BAR-----*/
 
-		/*------SCROLL BUTTON------*/
-
-#myBtn {
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
-	z-index: 10001;
-	border: none;
-	outline: none;
-	background-color: orange;
-	color: white;
-	cursor: pointer;
-	padding: 15px;
-}
-
-		/*-----HOME-PAGE-----*/
-
-		/*-----NAV-BAR-----*/
 .navbar-header {
 	position: relative;
-	z-index: 1000;
+	z-index: 1000; 
+	/*--navbar overlaps succeeding sections of the page--*/
 }
 
 .navbar-brand {
-	color: skyblue;
 	font-size: 30px;
 	padding: 5px 0 0 20px;
-}
+} 
 
 .navbar-brand img {
 	width: 100px;
@@ -122,8 +105,7 @@ button .icon-bar {
 
 .banner-caption {
 	padding: 20%;
-	/*line-height: 100px;*/
-	width: 65%;
+	max-width: 80%;
 
 }
 
@@ -131,15 +113,11 @@ button .icon-bar {
 	font-size: 45px;
 	font-family: 'Montserrat', sans-serif;
 	margin-bottom: 0;
-
-
 }
 
 .banner-caption h2 {
 	margin-top: 0;
 	color: white;
-	/*background-color: black;*/
-
 }
 
 .btn-warning {
@@ -166,7 +144,7 @@ button .icon-bar {
 	    }
 	}
 
- /*BANNER-COLLAPSE*/
+ 			/*BANNER-COLLAPSE*/
 
 @media (max-width: 425px) { 
     .index {
@@ -187,13 +165,9 @@ button .icon-bar {
 		font-size: 10px;
 		text-align: center;
 	}
-	.index-caption {
-		
-		 
-	}
 }
 
-/*---------- WHY EASEE LIFE ---------*/
+		/*---------- WHY EASEE LIFE ---------*/
 
 .first-row {
 	text-align: center;
@@ -209,6 +183,10 @@ button .icon-bar {
 	padding-left: 5px;
 }
 
+.first-row p {
+    text-align: justify;
+}
+
 .row h1 {
 	font-weight: bold;
 	font-size: 2em;
@@ -216,7 +194,6 @@ button .icon-bar {
 	color: #ff854b;
 	text-align: center;
 	text-transform: uppercase;
-
 }
 
 .row {
@@ -262,14 +239,8 @@ button .icon-bar {
 	padding-bottom: 30px;
 }
 
-
-img[alt="about-image"]:hover {
-	animation: bounce 1s;
-}
-
 			/*--- END --*/
 	/*-------  AFFILIATE PARTNERS ------*/
-
 
 .heading1 {
 	color: #ff854b;
@@ -303,25 +274,6 @@ img[alt="about-image"]:hover {
 }
 
 			/*--- END --*/
-
-
-	/*-------  CUSTOMER REVIEW ------*/
-/*.fourth-row h1 {
-	font-weight: bold;
-	font-size: 2em;
-	padding: 10px 10px 25px 10px;
-	color: #ff854b;
-	text-align: center;
-	text-transform: uppercase;
-	position: relative;
-
-}*/
-
-/*.carousel-inner {
-	padding-left: 28%;
-}*/
-	/*-------END OF CUSTOMER REVIEW ------*/
-
 
 	/*-------  FAQs ------*/
 
@@ -427,9 +379,6 @@ img[alt="about-image"]:hover {
 	padding-top: 40px;
 }
 
-.overlay {
-}
-
 footer {
 	background-color: #ff854b;
 	font-size: 1em;
@@ -445,20 +394,12 @@ footer img {
 	float: right;
 }
 
-.overlay {
-}
-
 footer img:hover {
 	animation: bounce 1s;
 }
 
+
 /*---ABOUT US---*/
-
-
-
-.about h3 {
-	font-weight: bold;
-}
 
 .container-about {
 	padding: 110px 0 50px 20px;
@@ -468,8 +409,6 @@ footer img:hover {
 	box-sizing: border-box;
 	font-weight: bold;
 	z-index: -1;
-	/*position: relative;*/
-
 }
 
 /*------WHO WE ARE-----*/
@@ -491,15 +430,10 @@ footer img:hover {
 }
 
 .container-about1 p {
-	/*max-width: 500px;*/
 	text-align: center;
 }
 
-/*------END OF WHO WE ARE-----*/
-
-
-	/*--pick-up--*/
-
+		/*------END OF WHO WE ARE-----*/
 
 
 .container-mission {
@@ -508,7 +442,7 @@ footer img:hover {
 }
 
 
-/*--carousel--*/
+				/*--carousel--*/
 
 .about {
 	padding: 0;
@@ -521,13 +455,8 @@ footer img:hover {
 	position: relative;
 }
 
-.carousel {
-/*	margin-left: 40%;*/
-}
-
 .carousel-inner {
 	width: 100%;
-	/*margin-left: 10%;*/
 	height: 80%;
 }
 
@@ -590,7 +519,6 @@ footer img:hover {
 .review-main {
 	margin: 30px 0 30px 0;
 	position: relative;
-	/*float: left;*/
 	bottom: 20px;
 	max-width: 900px;
 }
@@ -612,7 +540,6 @@ footer img:hover {
 	font-size: 0.8em;
 	line-height: 1.2em;
 	padding-left: 5px;
-
 }
 
 .review-main img {
@@ -638,20 +565,8 @@ footer img:hover {
 	padding-left: 0;
 }
 
-@media screen and (max-width: 1040px) and (min-width: 764px) {
+@media screen and (max-width: 1040px) {
     .review-section  {
-	padding-left: 0;
-	    }
-}
-
-@media screen and (max-width: 536px) {
-    .review-section  {
-	padding-left: 0;
-	    }
-}
-
-@media screen and (max-width: 452px) {
-    .container-review  {
 	padding-left: 0;
 	    }
 }
@@ -731,14 +646,11 @@ footer img:hover {
 
 .caption2 img {
 	width: 14vw;
-	/*height: 50px;*/
 }
 
 .caption2 {
 	max-width: 900px;
 	position: relative;
-	
-	
 }
 
 
@@ -758,7 +670,6 @@ footer img:hover {
 	.caption2 > h2 {
 		font-size: 3vw;
 		text-align: center;
-
 	}
 
 	.banner-caption > div {
@@ -766,7 +677,6 @@ footer img:hover {
 		top: 75%;
 		left: 50%;
 		position: absolute;
-
 }
 
 @media (max-width: 900px) { 
